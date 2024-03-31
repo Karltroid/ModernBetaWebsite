@@ -1,0 +1,307 @@
+*, ::after, ::before
+{
+	/* removed default styling */
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	border: 0;
+	background: none;
+	font-family: minecraft;
+	box-sizing: border-box;
+	color: white;
+	font-size: 100%;
+	list-style-type: none;
+}
+
+*:focus
+{
+	/* removed default styling */
+	outline: none;
+}
+
+body
+{
+	overflow-x: hidden;
+	background: var(--waterBlue);
+}
+
+nav
+{
+	width: 100vw;
+	height: var(--navBarHeight);
+	background: linear-gradient(180deg, var(--skyDarkBlueTop) 0%, var(--skyDarkBlueBot) 75%);
+	padding: 10px 25px;
+	box-shadow: var(--innerBoxShadow);
+	border-bottom: 2px solid black;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+nav .left
+{
+	display: inline-flex;
+	justify-content: left;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+nav .right
+{
+	display: inline-flex;
+	justify-content: right;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+nav .left img
+{
+	height: var(--navBarHeight);
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin: 0 20px 0 0;
+}
+
+#join-now-button
+{
+	background: linear-gradient(180deg, var(--logoLimeGreen) 0%, var(--logoLimeGreen2) 100%);
+	height: 100%;
+	padding: 0 30px;
+	color: var(--logoDarkGreen);
+	font-weight: bold;
+	font-size: 1.75em;
+	border: 2px solid var(--logoDarkGreen);
+	box-shadow: var(--centeredBoxShadow);
+}
+
+#join-now-button:hover
+{
+	cursor: pointer;
+	background: var(--logoDarkGreen);
+	color: var(--logoLimeGreen);
+	border: 2px solid var(--logoLimeGreen);
+}
+
+a:hover
+{
+	border-bottom: 2px dotted white;
+}
+
+nav a 
+{
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 25px;
+	font-size: 1.25em;
+	text-shadow: var(--mcTextShadow);
+}
+
+nav a:hover
+{
+	background: rgba(0,0,0,0.15);
+	border-bottom: solid 5px rgba(0, 0, 0, 0.15);
+}
+
+
+header
+{
+	min-height: calc(100vh - var(--navBarHeight)*5);
+	width: 100vw;
+	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
+	background-image: url('../images/homepage/world2.png');
+	background-position: center bottom;
+	background-size: auto 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: var(--navBarHeight);
+}
+
+#trailer
+{
+	display: block;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	z-index: 1;
+}
+
+#header-world
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+
+#page-content
+{
+	width: 95vw;
+	margin: 0 auto;
+	max-width: 1500px;
+}
+
+.content-row
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.content-row .card
+{
+	padding: 0 20px;
+	flex-basis: 100%;
+}
+
+#showcase-features
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -120px;
+	margin: 0 auto -120px;
+}
+
+#showcase-features .card
+{
+	height: 450px;
+	margin: 0 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-self: start;
+	min-width: 150px;
+	padding: 0px;
+}
+
+.card img
+{
+	width: 100%;
+	border: 2px solid black;
+	box-shadow: var(--centeredBoxShadow);
+	margin: 0 0 6px 0;
+}
+
+.card h1
+{
+	font-size: 1.25em;
+	margin: 6px 0;
+}
+
+.card .info
+{
+	text-shadow: var(--mcTextShadow);
+}
+
+footer
+{
+	background-image: url('../images/footer_bg.png');
+	background-size: 64px;
+	image-rendering: pixelated;
+	width: 100vw;
+	text-align: center;
+	padding: 32px;
+	box-shadow: var(--centeredBoxShadow);
+	border-top: 2px solid black;
+}
+
+.fullscreen-iframe
+{
+	margin-top: var(--navBarHeight);
+	width: 100vw;
+	height: calc(100vh - var(--navBarHeight));
+}
+
+.info-graphic-banner
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 50px 0;
+	border: 2px solid black;
+}
+
+.info-graphic-banner .info
+{
+	flex-basis: 45%;
+	min-height: 300px;
+}
+.info-graphic-banner .graphic
+{
+	flex-basis: 55%;
+	background-image: url('../images/homepage/ModernBetaSS1.png');
+	background-size: cover;
+	border-right: 2px solid black;
+	background-position: center;
+}
+
+.info-graphic-banner h1
+{
+	color:black;
+	padding: 15px 15px 0px 15px;
+	font-size: 1.5em;
+}
+
+.info-graphic-banner p
+{
+	color:black;
+	padding: 15px;
+	font-size: 1.2em;
+}
+
+.button-card
+{
+	margin: 15px;
+	flex-basis: 100%;
+	height: 260px;
+	background: gray;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	border: 2px solid black;
+}
+
+.button-card .info
+{
+	align-self: flex-end;
+	text-shadow: var(--mcTextShadow);
+	display: block;
+	padding: 15px;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.45));
+	width: 100%;
+}
+
+#showcase-features > .card:last-child {
+    margin-right: 0;
+}
+
+#showcase-features > .card:first-child {
+    margin-left: 0;
+}
+
+.content-row > .button-card:last-child {
+    margin-right: 0;
+}
+
+.content-row > .button-card:first-child {
+    margin-left: 0;
+}
+
+#dynmap
+{
+	background-image: url('../images/homepage/isometric.jpg');
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /font/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /images/icons/
+Disallow: /images/join/
+
+Sitemap: https://modernbeta.org/sitemap.xml

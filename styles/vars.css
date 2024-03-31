@@ -1,0 +1,47 @@
+/*********
+* FONTS *
+*********/
+@font-face 
+{
+	font-family: minecraft;
+	src: url('../fonts/minecraftregular.otf');
+}
+@font-face 
+{
+	font-family: minecraft-bold;
+	src: url('../fonts/minecraftbold.otf');
+}
+@font-face 
+{
+	font-family: minecraft-italic;
+	src: url('../fonts/minecraftitalic.otf');
+}
+
+/*************
+* VARIABLES *
+*************/
+:root
+{
+	/* common colors */
+	--skyLightBlueTop: rgb(134, 176, 255);
+	--skyLightBlueBot: rgb(171, 201, 255);
+	--skyDarkBlueTop: rgb(144, 169, 241);
+	--skyDarkBlueBot: rgb(94, 116, 209);
+	--waterBlue: rgb(35, 57, 142);
+
+	--logoLimeGreen: rgb(179,255,0);
+	--logoLimeGreen2: rgb(127,210,0);
+	--logoDarkGreen: rgb(47,93,0);
+
+	--newSkyBlueTop: rgb(115, 179, 255);
+	--newSkyBlueBot: rgb(184, 206, 254);
+
+	/* box shadows */
+	--perspectiveBoxShadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--centeredBoxShadow: 0 0px 10px rgba(0, 0, 0, .25);
+	--innerBoxShadow: inset 0 0 10px rgba(0, 0, 0, .25);
+
+	--navBarHeight: 88px;
+
+	--mcTextShadow: -2px 2px 0px rgba(0,0,0,.65);
+}
