@@ -43,7 +43,6 @@ nav .left
 	display: inline-flex;
 	justify-content: left;
 	align-items: center;
-	width: 50%;
 	height: 100%;
 	float: left;
 }
@@ -53,7 +52,6 @@ nav .right
 	display: inline-flex;
 	justify-content: right;
 	align-items: center;
-	width: 50%;
 	height: 100%;
 	float: right;
 }
@@ -113,7 +111,7 @@ nav a:hover
 
 header
 {
-	min-height: calc(100vh - var(--navBarHeight)*5);
+	min-height: calc(100vh - var(--navBarHeight));
 	width: 100vw;
 	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
 	background-image: url('../images/homepage/World2.png');
@@ -130,7 +128,7 @@ header
 {
 	display: block;
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -30%);
 	z-index: 1;
