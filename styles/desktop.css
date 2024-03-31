@@ -116,7 +116,7 @@ header
 	min-height: calc(100vh - var(--navBarHeight)*5);
 	width: 100vw;
 	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
-	background-image: url('../images/homepage/world2.png');
+	background-image: url('../images/homepage/World2.png');
 	background-position: center bottom;
 	background-size: auto 100%;
 	
