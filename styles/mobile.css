@@ -6,3 +6,34 @@ body
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
+
+.desktop-only
+{
+	display: none;
+}
+
+
+.mobile-only
+{
+	display: block;
+}
+
+nav a 
+{
+	padding: 0 10px;
+}
+
+#nav-menu-btn
+{
+	font-weight: 900;
+	font-size: calc(var(--navBarHeight) / 1.5);
+	text-shadow: var(--mcTextShadow);
+	padding: 0 25px;
+}
+
+#nav-menu-btn:hover
+{
+	transform: scale(1.2);
+	cursor: pointer;
+
+}

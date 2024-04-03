@@ -19,6 +19,18 @@
 	outline: none;
 }
 
+.desktop-only
+{
+	display: initial;
+}
+
+
+.mobile-only
+{
+	display: none;
+}
+
+
 body
 {
 	overflow-x: hidden;
@@ -100,6 +112,7 @@ nav a
 	padding: 0 25px;
 	font-size: 1.25em;
 	text-shadow: var(--mcTextShadow);
+	line-height: calc(var(--navBarHeight) / 1.35);
 }
 
 nav a:hover

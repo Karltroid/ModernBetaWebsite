@@ -16,8 +16,9 @@
 
 		<!-- stylesheets & scripts -->
 		<link rel="stylesheet" type="text/css" href="styles/vars.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 1100px)" href="styles/vars_mobile.css">
 		<link rel="stylesheet" type="text/css" href="styles/desktop.css">
-		<link rel="stylesheet" type="text/css" media="(max-width: 990px)" href="styles/mobile.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 1100px)" href="styles/mobile.css">
 		
 		<!-- site title & icon -->
 		<link rel="shortcut icon" href="images/media/favicon.ico" type="image/x-icon">
@@ -30,12 +31,11 @@
 		<nav>
 			<div class="left">
 				<a href=""><img src="images/ModernBetaLogo_Full.png" /></a>
-				<a href="">About</a><a href="">Rules</a><a href="">Discord</a><a href="">Socials</a><a href="store">Store</a>
+				<a href="" class="desktop-only">About</a><a href="" class="desktop-only">Rules</a><a href="" class="desktop-only">Discord</a><a href="" class="desktop-only">Socials</a><a href="store" class="desktop-only">Store</a>
 			</div>
 			<div class="right">
-				<button id="join-now-button">
-					Play Now!
-				</button>
+				<button id="nav-menu-btn" class="mobile-only">☰</button>
+				<button id="join-now-button">Play Now!</button>
 			</div>
 		</nav>
 
@@ -108,7 +108,7 @@
 		</div>
 
 		<footer>
-			<a href="https://discord.gg/gXmjuejWtD">Discord</a> | <a href="https://www.youtube.com/@ModernBetaSMP">YouTube</a> | <a href="https://www.twitch.tv/ModernBetaSMP">Twitch</a> | <a href="https://twitter.com/ModernBetaSMP">Twitter</a> | <a href="https://www.reddit.com/r/ModernBetaSMP/">Reddit</a> | <a href="https://www.instagram.com/modernbetasmp/">Instagram</a> | <a href="https://www.tiktok.com/@modernbetasmp">TikTok</a> | <a href="https://www.facebook.com/ModernBetaSMP/">FaceBook</a> | <a href="https://www.threads.net/@modernbetasmp">Threads</a>
+			<a href="https://discord.gg/gXmjuejWtD">Discord</a> | <a href="https://www.youtube.com/@ModernBetaSMP">YouTube</a> | <a href="https://www.twitch.tv/ModernBetaSMP">Twitch</a> | <a href="https://twitter.com/ModernBetaSMP">Twitter</a> | <a href="https://www.reddit.com/r/ModernBetaSMP/">Reddit</a> | <a href="https://www.instagram.com/modernbetasmp/">Instagram</a> | <a href="https://www.tiktok.com/@modernbetasmp">TikTok</a> | <a href="https://www.tumblr.com/blog/modernbetasmp">Tumblr</a> | <a href="https://www.facebook.com/ModernBetaSMP/">Facebook</a> | <a href="https://www.threads.net/@modernbetasmp">Threads</a>
 			<br /><br />
 			<a href="mailto:modernbetaserver@gmail.com">ModernBetaServer@Gmail.com</a><br />
 			Developed by <a href="https://www.twitter.com/karltroid">Karltroid</a><br />
