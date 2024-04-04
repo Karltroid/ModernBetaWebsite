@@ -12,28 +12,120 @@ body
 	display: none;
 }
 
+header
+{
+	height: calc(75vh - var(--navBarHeight));
+	min-height: 650px;
+	padding: 40px;
+}
+
+#trailer
+{
+	position: relative;
+	left: 0;
+	top: 0;
+	transform: none;
+	height: 320px;
+	width: 100%;
+}
+
 
 .mobile-only
 {
 	display: block;
 }
 
+nav
+{
+	padding: 10px 15px;
+	box-sizing: border-box;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 nav a 
 {
-	padding: 0 10px;
+	padding: 0 0px;
 }
+
+
+
+nav .left img
+{
+	margin: 0px;
+}
+
 
 #nav-menu-btn
 {
 	font-weight: 900;
 	font-size: calc(var(--navBarHeight) / 1.5);
 	text-shadow: var(--mcTextShadow);
-	padding: 0 25px;
+	padding: 0;
 }
 
 #nav-menu-btn:hover
 {
-	transform: scale(1.2);
+	transform: scale(1.1) translate(2px, 0);
 	cursor: pointer;
 
+}
+
+#showcase-features
+{
+	overflow-x: scroll;
+	justify-content: left;
+	-webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  	mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  	padding: 0px 80px 0 15px;
+  	top: -105px;
+	margin: 0 auto -105px;
+}
+
+#showcase-features .card
+{
+	height: 450px;
+	margin: 0 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-self: start;
+	min-width: 200px;
+	padding: 0px;
+}
+
+
+.more-info-button
+{
+	float: left;
+}
+
+.info-graphic-banner
+{
+	flex-direction: column;
+}
+
+.info-graphic-banner .info
+{
+	min-height: 0px;
+}
+
+.info-graphic-banner .graphic
+{
+	min-height: 300px;
+	border-right: none;
+	border-bottom: 2px solid black;
+}
+
+#join-now-button-alt
+{
+	background: linear-gradient(180deg, var(--logoLimeGreen) 0%, var(--logoLimeGreen2) 100%);
+	padding: 15px 50px;
+	color: var(--logoDarkGreen);
+	font-weight: bold;
+	font-size: 2em;
+	border: 2px solid var(--logoDarkGreen);
+	box-shadow: var(--centeredBoxShadow);
+	width: 100%;
+	margin:  0 0 40px 0;
 }

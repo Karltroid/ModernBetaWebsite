@@ -30,6 +30,11 @@
 	display: none;
 }
 
+h1
+{
+	font-weight: normal;
+	font-family: minecraft-bold;
+}
 
 body
 {
@@ -46,6 +51,7 @@ nav
 	box-shadow: var(--innerBoxShadow);
 	border-bottom: 2px solid black;
 	position: fixed;
+	display: flex;
 	top: 0;
 	z-index: 10;
 }
@@ -57,6 +63,7 @@ nav .left
 	align-items: center;
 	height: 100%;
 	float: left;
+	flex-basis: 40%;
 }
 
 nav .right
@@ -66,14 +73,24 @@ nav .right
 	align-items: center;
 	height: 100%;
 	float: right;
+	flex-basis: 60%;
 }
 
 nav .left img
 {
-	height: var(--navBarHeight);
+	height: 100%;
 	box-sizing: border-box;
-	padding: 10px 0;
-	margin: 0 20px 0 0;
+}
+
+#nav-logo
+{
+	padding: 0 20px 0px 0px;
+}
+
+#nav-logo:hover
+{
+	background: none;
+	border: none;
 }
 
 #join-now-button
@@ -128,8 +145,8 @@ header
 	width: 100vw;
 	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
 	background-image: url('../images/homepage/World2.png');
-	background-position: center bottom;
-	background-size: auto 100%;
+	background-position: center;
+	background-size: cover;s
 	
 	display: flex;
 	justify-content: center;
@@ -141,10 +158,12 @@ header
 {
 	display: block;
 	position: absolute;
-	top: 35%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -30%);
+	transform: translate(-50%, -50%);
 	z-index: 1;
+	height: 340px;
+	width: 600px;
 }
 
 #header-world
@@ -184,6 +203,7 @@ header
 	position: relative;
 	top: -120px;
 	margin: 0 auto -120px;
+	overflow: hidden;
 }
 
 #showcase-features .card
@@ -227,6 +247,7 @@ footer
 	padding: 32px;
 	box-shadow: var(--centeredBoxShadow);
 	border-top: 2px solid black;
+	margin-top: 50px;
 }
 
 .fullscreen-iframe
@@ -234,6 +255,7 @@ footer
 	margin-top: var(--navBarHeight);
 	width: 100vw;
 	height: calc(100vh - var(--navBarHeight));
+	margin-bottom: -55px;
 }
 
 .info-graphic-banner
@@ -250,27 +272,40 @@ footer
 {
 	flex-basis: 45%;
 	min-height: 300px;
+	padding: 15px;
 }
+
+.info-graphic-banner .info a
+{
+	color: rgb(64, 64, 64);
+	border-bottom: 2px dotted rgba(64, 64, 64,0.5);
+}
+
+.info-graphic-banner .info a:hover
+{
+	color: white;
+	border-bottom: 2px dotted white;
+}
+
 .info-graphic-banner .graphic
 {
 	flex-basis: 55%;
 	background-image: url('../images/homepage/ModernBetaSS1.png');
 	background-size: cover;
 	border-right: 2px solid black;
-	background-position: center;
+	background-position: center bottom;
 }
 
 .info-graphic-banner h1
 {
 	color:black;
-	padding: 15px 15px 0px 15px;
 	font-size: 1.5em;
+	margin: 0 0 8px;
 }
 
 .info-graphic-banner p
 {
 	color:black;
-	padding: 15px;
 	font-size: 1.2em;
 }
 
@@ -286,13 +321,19 @@ footer
 	border: 2px solid black;
 }
 
+.button-card:hover
+{
+	transform: scale(1.02);
+	border: 2px solid white;
+}
+
 .button-card .info
 {
 	align-self: flex-end;
 	text-shadow: var(--mcTextShadow);
 	display: block;
 	padding: 15px;
-	background: linear-gradient(transparent, rgba(0, 0, 0, 0.45));
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
 	width: 100%;
 }
 
@@ -315,4 +356,29 @@ footer
 #dynmap
 {
 	background-image: url('../images/homepage/isometric.jpg');
+}
+
+#discord
+{
+	background-image: url('../images/homepage/discord_banner.jpg');
+}
+
+
+.more-info-button
+{
+	display: inline-block;
+	color:black !important;
+	padding: 15px;
+	font-size: 1.2em;
+	background: white;
+	border: 2px solid black !important;
+	float: right;
+	margin: 8px 0 0 0;
+}
+
+.more-info-button:hover
+{
+	border: 2px solid white !important;
+	background: black;
+	color: white !important;
 }
