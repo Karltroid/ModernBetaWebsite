@@ -42,6 +42,13 @@ body
 	background: var(--waterBlue);
 }
 
+.pixel-perfect
+{
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
 nav
 {
 	width: 100vw;
@@ -241,7 +248,6 @@ footer
 {
 	background-image: url('../images/footer_bg.png');
 	background-size: 64px;
-	image-rendering: pixelated;
 	width: 100vw;
 	text-align: center;
 	padding: 32px;
