@@ -80,12 +80,14 @@ nav .left img
   	padding: 0px 80px 0 15px;
   	top: -105px;
 	margin: 0 auto -105px;
+	position: relative;
+	left: -15px;
 }
 
 #showcase-features .card
 {
 	height: 450px;
-	margin: 0 15px;
+	margin: 0 15px 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -103,6 +105,7 @@ nav .left img
 .info-graphic-banner
 {
 	flex-direction: column;
+	margin-bottom: 40px;
 }
 
 .info-graphic-banner .info
@@ -128,4 +131,63 @@ nav .left img
 	box-shadow: var(--centeredBoxShadow);
 	width: 100%;
 	margin:  0 0 40px 0;
+}
+
+#join-now-button-alt:hover
+{
+	cursor: pointer;
+	background: var(--logoDarkGreen);
+	color: var(--logoLimeGreen);
+	border: 2px solid var(--logoLimeGreen);
+}
+
+.content-row-2
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	flex-direction: column;
+	height: 640px;
+}
+
+.button-card
+{
+	margin: 0 0 40px;
+}
+
+footer
+{
+	margin-top: 0px;
+	padding: 20px 5px;
+	z-index: 1;
+}
+
+#mobile-nav-dropdown
+{
+	display: none;
+	position: absolute;
+	text-align: center;
+	top: var(--navBarHeight);
+	right: 0;
+	background-image: url('../images/mobile_nav_bg.png');
+	background-size: 64px;
+	height: calc(100vh - var(--navBarHeight));
+	padding: 15px 0;
+	border-left: 2px solid black;
+	box-shadow: var(--perspectiveBoxShadow);
+	z-index: -1;
+}
+
+#mobile-nav-dropdown a
+{
+	display: block;
+	height: auto;
+	line-height: calc(var(--navBarHeight) / 1.35);
+	padding: 0 30px;
+}
+
+nav a:hover
+{
+	background: rgba(0,0,0,0.25);
+	border-bottom: none;
 }

@@ -57,7 +57,7 @@ nav
 	height: var(--navBarHeight);
 	background: linear-gradient(180deg, var(--skyDarkBlueTop) 0%, var(--skyDarkBlueBot) 75%);
 	padding: 10px 25px;
-	box-shadow: var(--innerBoxShadow);
+	box-shadow: var(--perspectiveBoxShadow);
 	border-bottom: 2px solid black;
 	position: fixed;
 	display: flex;
@@ -218,7 +218,7 @@ header
 #showcase-features .card
 {
 	height: 450px;
-	margin: 0 15px;
+	margin: 0 15px 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -263,7 +263,7 @@ footer
 	margin-top: var(--navBarHeight);
 	width: 100vw;
 	height: calc(100vh - var(--navBarHeight));
-	margin-bottom: -55px;
+	margin-bottom: -5px;
 }
 
 .info-graphic-banner
@@ -272,7 +272,7 @@ footer
 	display: flex;
 	justify-content: center;
 	background: rgba(255, 255, 255, 0.7);
-	margin: 50px 0;
+	margin: 0 0 50px;
 	border: 2px solid black;
 }
 
@@ -389,4 +389,11 @@ footer
 	border: 2px solid white !important;
 	background: black;
 	color: white !important;
+}
+
+.content-row-2
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
 }

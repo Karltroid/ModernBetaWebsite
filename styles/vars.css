@@ -37,7 +37,7 @@
 	--newSkyBlueBot: rgb(184, 206, 254);
 
 	/* box shadows */
-	--perspectiveBoxShadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--perspectiveBoxShadow: 0 10px 25px rgba(0, 0, 0, 0.1425), 0 6px 12px rgba(0, 0, 0, 0.1725);
 	--centeredBoxShadow: 0 0px 10px rgba(0, 0, 0, .25);
 	--innerBoxShadow: inset 0 0 10px rgba(0, 0, 0, .25);
 
