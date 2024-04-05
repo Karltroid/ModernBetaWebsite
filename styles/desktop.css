@@ -65,6 +65,13 @@ nav
 	z-index: 10;
 }
 
+#nav-content
+{
+	width: 1500px;
+	display: block;
+	margin: 0 auto;
+}
+
 nav .left
 {
 	display: inline-flex;
@@ -150,7 +157,7 @@ nav a:hover
 
 header
 {
-	min-height: calc(100vh - var(--navBarHeight));
+	height: 880px;
 	width: 100vw;
 	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
 	background-image: url('../images/homepage/World2.png');
@@ -167,12 +174,12 @@ header
 {
 	display: block;
 	position: absolute;
-	top: 50%;
+	top: 300px;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateX(-50%);
 	z-index: 1;
-	height: 340px;
-	width: 600px;
+	height: 300px;
+	width: 544px;
 }
 
 #header-world
@@ -353,11 +360,11 @@ footer
     margin-left: 0;
 }
 
-.content-row > .button-card:last-child {
+.content-row,.content-row-2 > .button-card:last-child {
     margin-right: 0;
 }
 
-.content-row > .button-card:first-child {
+.content-row,.content-row-2 > .button-card:first-child {
     margin-left: 0;
 }
 
