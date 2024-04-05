@@ -9,7 +9,6 @@ window.onload = function()
 
 function togglenav()
 {
-	console.log(mobileNavSideBar);
 	mobileNavSideBar.style.display == "none" ? opennav() : closenav();
 }
 
