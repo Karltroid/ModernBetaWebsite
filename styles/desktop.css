@@ -162,24 +162,22 @@ header
 	/*background: linear-gradient(180deg, var(--newSkyBlueTop) 0%, var(--newSkyBlueBot) 75%);*/
 	background-image: url('../images/homepage/World2.png');
 	background-position: center;
-	background-size: cover;s
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-size: auto 100%;
+	background-repeat: repeat-x;
 	margin-top: var(--navBarHeight);
+	position: relative;
 }
 
 #trailer
 {
 	display: block;
 	position: absolute;
-	top: 300px;
+	top: 368px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
-	height: 300px;
-	width: 544px;
+	height: 181px;
+	width: 362px;
 }
 
 #header-world
@@ -328,7 +326,7 @@ footer
 {
 	margin: 15px;
 	flex-basis: 100%;
-	height: 260px;
+	height: 360px;
 	background: gray;
 	background-size: cover;
 	background-position: center;
