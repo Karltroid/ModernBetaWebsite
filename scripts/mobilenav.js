@@ -1,25 +1,28 @@
-var mobileNavSideBar;
+var mobileNavSideBar, mobileNavButton;
 
 window.onload = function()
 {
 	mobileNavSideBar = document.getElementById("mobile-nav-dropdown");
-	closenav();
+	mobileNavButtonImage = document.getElementById("nav-menu-btn").firstChild;
+	mobileNavSideBar.style.display = "none";
 };
 
 
-function togglenav()
+function togglenav(folderRoot)
 {
-	mobileNavSideBar.style.display == "none" ? opennav() : closenav();
+	mobileNavSideBar.style.display == "none" ? opennav(folderRoot) : closenav(folderRoot);
 }
 
-function opennav()
+function opennav(folderRoot)
 {
 	mobileNavSideBar.style.display = "block";
+	mobileNavButtonImage.src = folderRoot + "images/icons/close_menu.png";
 }
 
-function closenav()
+function closenav(folderRoot)
 {
 	mobileNavSideBar.style.display = "none";
+	mobileNavButtonImage.src = folderRoot + "images/icons/open_menu.png";
 }
 
 window.addEventListener("resize", function()

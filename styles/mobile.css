@@ -58,18 +58,19 @@ nav .right
 
 #nav-menu-btn
 {
-	display: table-cell;
-	vertical-align: middle;
-	font-weight: 900;
-	font-size: calc(var(--navBarHeight) / 1.5);
-	text-shadow: var(--mcTextShadow);
+	display: block;
+	height: 100%;
+}
+
+#nav-menu-btn img
+{
+	height: 100%;
+	padding: 10px;
 }
 
 #nav-menu-btn:hover
 {
-	transform: scale(1.1);
 	cursor: pointer;
-
 }
 
 #showcase-features
