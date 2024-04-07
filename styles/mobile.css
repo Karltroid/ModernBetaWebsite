@@ -159,7 +159,6 @@ footer
 {
 	margin-top: 0px;
 	padding: 20px 5px;
-	z-index: 1;
 }
 
 #mobile-nav-dropdown
@@ -175,7 +174,7 @@ footer
 	padding: 15px 0;
 	border-left: 2px solid black;
 	box-shadow: var(--perspectiveBoxShadow);
-	z-index: -1;
+	z-index: 9;
 }
 
 #mobile-nav-dropdown a

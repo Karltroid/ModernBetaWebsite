@@ -70,6 +70,7 @@ nav
 	width: 1500px;
 	display: block;
 	margin: 0 auto;
+	z-index: 11;
 }
 
 nav .left
@@ -92,7 +93,7 @@ nav .right
 	flex-basis: 60%;
 }
 
-nav .left img
+#nav-logo img
 {
 	height: 100%;
 	box-sizing: border-box;
