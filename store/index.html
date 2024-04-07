@@ -16,8 +16,9 @@
 
 		<!-- stylesheets & scripts -->
 		<link rel="stylesheet" type="text/css" href="../styles/vars.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 1050px)" href="styles/vars_mobile.css">
 		<link rel="stylesheet" type="text/css" href="../styles/desktop.css">
-		<link rel="stylesheet" type="text/css" media="(max-width: 990px)" href="../styles/mobile.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 1050px)" href="../styles/mobile.css">
 		<script src="../scripts/mobilenav.js"></script>
 		
 		<!-- site title & icon -->
@@ -31,14 +32,16 @@
 			<div id="nav-content">
 				<div class="left">
 					<a href="../" id="nav-logo"><img src="../images/ModernBetaLogo_Full.png" /></a>
-					<a href="../" class="desktop-only">Home</a><a href="" class="desktop-only">Rules</a><a target="_blank" href="https://discord.gg/gXmjuejWtD" class="desktop-only">Discord</a><a href="" class="desktop-only">Socials</a><a href="store" class="desktop-only">Store</a>
+					<div id="nav-links" class="desktop-only">
+						<a href="../">Home</a><a href="">Rules</a><a target="_blank" href="https://discord.gg/gXmjuejWtD">Discord</a><a href="">Socials</a><a href="">Store</a>
+					</div>
 				</div>
 				<div class="right">
 					<button id="nav-menu-btn" class="mobile-only" onclick="togglenav()">☰</button>
 					<button id="join-now-button" class="desktop-only">Play Now!</button>
 				</div>
 				<div id="mobile-nav-dropdown" class="mobile-only pixel-perfect">
-					<a href="../">Home</a><a href="">Rules</a><a target="_blank" href="https://discord.gg/gXmjuejWtD">Discord</a><a href="">Socials</a><a href="store">Store</a>
+					<a href="../">Home</a><a href="">Rules</a><a target="_blank" href="https://discord.gg/gXmjuejWtD">Discord</a><a href="">Socials</a><a href="">Store</a>
 				</div>
 			</div>
 		</nav>

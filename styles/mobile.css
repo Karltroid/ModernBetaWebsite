@@ -9,7 +9,7 @@ body
 
 .desktop-only
 {
-	display: none;
+	display: none !important;
 }
 
 header
@@ -27,7 +27,7 @@ header
 
 .mobile-only
 {
-	display: block;
+	display: initial;
 }
 
 nav
@@ -38,23 +38,30 @@ nav
 	justify-content: space-between;
 }
 
-nav a 
+#nav-links a 
 {
 	padding: 0 0px;
 }
-
-
 
 nav .left img
 {
 	margin: 0px;
 }
 
+nav .right
+{
+	display: inline-table;
+	height: 100%;
+}
+
 
 #nav-menu-btn
 {
+	display: table-cell;
+	vertical-align: middle;
 	font-weight: 900;
 	font-size: calc(var(--navBarHeight) / 1.5);
+	line-height: calc(var(--navBarHeight) / 1.15);
 	text-shadow: var(--mcTextShadow);
 	padding: 0;
 }
@@ -183,6 +190,9 @@ footer
 	height: auto;
 	line-height: calc(var(--navBarHeight) / 1.35);
 	padding: 0 40px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-shadow: var(--mcTextShadow);
 }
 
 #mobile-nav-dropdown a:hover
