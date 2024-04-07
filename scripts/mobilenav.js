@@ -1,4 +1,5 @@
 var mobileNavSideBar, mobileNavButton;
+var folderRoot = '';
 
 window.onload = function()
 {
@@ -8,18 +9,18 @@ window.onload = function()
 };
 
 
-function togglenav(folderRoot)
+function togglenav()
 {
 	mobileNavSideBar.style.display == "none" ? opennav(folderRoot) : closenav(folderRoot);
 }
 
-function opennav(folderRoot)
+function opennav()
 {
 	mobileNavSideBar.style.display = "block";
 	mobileNavButtonImage.src = folderRoot + "images/icons/close_menu.png";
 }
 
-function closenav(folderRoot)
+function closenav()
 {
 	mobileNavSideBar.style.display = "none";
 	mobileNavButtonImage.src = folderRoot + "images/icons/open_menu.png";

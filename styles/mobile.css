@@ -175,7 +175,7 @@ footer
 	text-align: center;
 	top: var(--navBarHeight);
 	right: 0;
-	background-image: url('../images/mobile_nav_bg.png');
+	background-image: url('../images/backgrounds/mobile_nav_bg.png');
 	background-size: 64px;
 	height: calc(100vh - var(--navBarHeight));
 	padding: 15px 0;
@@ -199,4 +199,9 @@ footer
 {
 	background: rgba(0,0,0,0.25);
 	border-bottom: none;
+}
+
+#socials-grid
+{
+	width: 100%;
 }

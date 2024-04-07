@@ -1,8 +1,9 @@
 User-agent: *
-Disallow: /font/
+Disallow: /fonts/
 Disallow: /scripts/
 Disallow: /styles/
 Disallow: /images/icons/
-Disallow: /images/join/
+Disallow: /images/socials/
+Disallow: /images/backgrounds/
 
 Sitemap: https://modernbeta.org/sitemap.xml
