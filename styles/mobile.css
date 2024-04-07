@@ -50,7 +50,8 @@ nav .left img
 
 nav .right
 {
-	display: inline-table;
+	display: flex;
+	align-items: center;
 	height: 100%;
 }
 
@@ -61,14 +62,12 @@ nav .right
 	vertical-align: middle;
 	font-weight: 900;
 	font-size: calc(var(--navBarHeight) / 1.5);
-	line-height: calc(var(--navBarHeight) / 1.15);
 	text-shadow: var(--mcTextShadow);
-	padding: 0;
 }
 
 #nav-menu-btn:hover
 {
-	transform: scale(1.1) translate(2px, 0);
+	transform: scale(1.1);
 	cursor: pointer;
 
 }
