@@ -138,6 +138,7 @@ nav .right
 	top: 100px;
 	left: 50%;
 	transform: translateX(-50%);
+	font-family: minecraft-bold;
 }
 
 #join-now-button-alt:hover

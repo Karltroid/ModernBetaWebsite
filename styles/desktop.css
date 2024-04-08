@@ -142,6 +142,7 @@ nav .right
 	font-size: 1.75em;
 	border: 2px solid var(--logoDarkGreen);
 	box-shadow: var(--centeredBoxShadow);
+	font-family: minecraft-bold;
 }
 
 #join-now-button:hover
