@@ -109,6 +109,8 @@ nav .right
 {
 	display: inline-table;
 	height: 100%;
+	position: absolute;
+	top: 0;
 }
 
 #nav-links a 
