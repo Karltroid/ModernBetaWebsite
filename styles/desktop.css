@@ -39,7 +39,7 @@ h1
 body
 {
 	overflow-x: hidden;
-	background: var(--waterBlue);
+	background: linear-gradient(180deg, var(--waterBlue) 25%, var(--waterBlueDark) 100%)
 }
 
 .pixel-perfect
@@ -402,8 +402,8 @@ footer a:hover
 
 #socials-grid
 {
-	width: 1000px;
-	padding-top: 20px;
+	width: 100%;
+	padding: 20px 0;
 	margin: 0 auto;
 }
 
@@ -411,7 +411,7 @@ footer a:hover
 {
 	display: flex;
 	align-items: center;
-	padding: 10px;
+	padding: 15px;
 	border-bottom: 2px dashed white;
 }
 
@@ -427,9 +427,9 @@ footer a:hover
 
 #socials-grid .social img
 {
-	width: 50px;
-	height: 50px;
-	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+	margin-right: 15px;
 }
 
 #socials-grid .social .content
@@ -437,10 +437,17 @@ footer a:hover
 	text-shadow: var(--mcTextShadow);
 }
 
+#socials-grid *:last-child *:last-child
+{
+	border-bottom: 0px ;
+}
+
 #socials-grid .social h1
 {
+	font-size: 1.25em;
 }
 
 #socials-grid .social p
 {
+	font-size: 1.2em;
 }
