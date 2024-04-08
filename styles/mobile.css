@@ -205,3 +205,27 @@ footer
 {
 	width: 100%;
 }
+
+#rules th
+{
+	display: none;
+}
+
+#rules td
+{
+	display: block;
+	margin: 0px 0px 25px 0px;
+}
+
+#rules ol
+{
+	border: none;
+	padding: 20px 0px 0px;
+}
+
+#rules td[data-th]:before
+{
+	content: attr(data-th);
+	font-size: 2em;
+	font-family: minecraft-bold;
+}

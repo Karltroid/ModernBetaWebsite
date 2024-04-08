@@ -10,7 +10,6 @@
 	box-sizing: border-box;
 	color: white;
 	font-size: 100%;
-	list-style-type: none;
 }
 
 *:focus
@@ -30,7 +29,7 @@
 	display: none;
 }
 
-h1
+h1,th
 {
 	font-weight: normal;
 	font-family: minecraft-bold;
@@ -450,4 +449,55 @@ footer a:hover
 #socials-grid .social p
 {
 	font-size: 1.2em;
+}
+
+#rules
+{
+	width: 100%;
+	height: 100%;
+	text-shadow: var(--mcTextShadow);
+	padding: 25px 0 0 0 ;
+}
+
+#rules ol
+{
+	list-style-type: upper-roman !important;
+	list-style: upper-roman inside;
+	border: 2px solid black;
+	padding: 10px;
+	height: 100%;
+}
+
+#rules ol img
+{
+	width: 100%;
+	max-width: 300px;
+}
+
+#rules th
+{
+	width: 50%;
+	padding: 20px;
+	font-size: 1.5em;
+	border: 2px solid black;
+}
+
+#rules td
+{
+	height: 100%;
+}
+
+#rules li
+{
+	margin-bottom: 20px;
+}
+
+#rules li h2
+{
+	font-weight: normal;
+	font-family: minecraft-bold;
+	margin-bottom: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline;
 }
