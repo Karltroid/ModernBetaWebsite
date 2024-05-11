@@ -36,6 +36,7 @@ nav
 	box-sizing: border-box;
 	flex-direction: row;
 	justify-content: space-between;
+	max-height: 100px;
 }
 
 #nav-links a 
@@ -77,25 +78,33 @@ nav .right
 {
 	overflow-x: scroll;
 	justify-content: left;
-	-webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-  	mask-image: linear-gradient(to right, black 80%, transparent 100%);
-  	padding: 0px 80px 0 15px;
-  	top: -105px;
-	margin: 0 auto -105px;
-	position: relative;
+	-webkit-mask-image: linear-gradient(to right, black 75%, rgba(0, 0, 0, 0.01) 100%);
+  	mask-image: linear-gradient(to right, black 75%, rgba(0, 0, 0, 0.01) 100%);
 	left: -15px;
+	width: 100vw;
+	margin: 0 0 calc(-120px + var(--verticalSpacing));
+	padding: 0 80px 0 0;
 }
 
 #showcase-features .card
 {
-	height: 450px;
-	margin: 0 15px 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	align-self: start;
-	min-width: 200px;
-	padding: 0px;
+	margin: 0 var(--horizontalSpacing) 0px;
+	min-width: 180px;
+}
+
+#showcase-features:hover
+{
+	cursor: pointer;
+}
+
+#showcase-features > .card:last-child,
+.content-row > .button-card:last-child {
+    margin-right: 15px;
+}
+
+#showcase-features > .card:first-child,
+.content-row > .button-card:first-child {
+    margin-left: 15px;
 }
 
 
@@ -107,7 +116,7 @@ nav .right
 .info-graphic-banner
 {
 	flex-direction: column;
-	margin-bottom: 40px;
+	margin-bottom: var(--verticalSpacing);
 }
 
 .info-graphic-banner .info
@@ -160,13 +169,12 @@ nav .right
 
 .button-card
 {
-	margin: 0 0 40px;
+	margin: 0 0 var(--verticalSpacing) 0px;
 }
 
 footer
 {
 	margin-top: 0px;
-	padding: 20px 5px;
 }
 
 #mobile-nav-dropdown

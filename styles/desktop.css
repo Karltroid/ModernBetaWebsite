@@ -202,32 +202,25 @@ header
 	position: relative;
 }
 
-.content-row .card
-{
-	padding: 0 20px;
-	flex-basis: 100%;
-}
-
 #showcase-features
 {
 	display: flex;
 	justify-content: center;
 	position: relative;
 	top: -120px;
-	margin: 0 auto -120px;
-	overflow: hidden;
+	margin: 0 auto calc(-120px + var(--verticalSpacing));
 }
 
 #showcase-features .card
 {
-	height: 450px;
-	margin: 0 15px 40px;
+	margin: 0 var(--horizontalSpacing);
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
 	align-self: start;
 	min-width: 150px;
 	padding: 0px;
+	flex-basis: 100%;
 }
 
 .card img
@@ -255,10 +248,10 @@ footer
 	background-size: 64px;
 	width: 100vw;
 	text-align: center;
-	padding: 32px;
+	padding: var(--verticalSpacing) var(--horizontalSpacing);
 	box-shadow: var(--centeredBoxShadow);
 	border-top: 2px solid black;
-	margin-top: 50px;
+	margin-top: var(--verticalSpacing);
 }
 
 footer a:hover
@@ -280,7 +273,7 @@ footer a:hover
 	display: flex;
 	justify-content: center;
 	background: rgba(255, 255, 255, 0.7);
-	margin: 0 0 50px;
+	margin: 0 0 var(--verticalSpacing);
 	border: 2px solid black;
 }
 
@@ -288,7 +281,7 @@ footer a:hover
 {
 	flex-basis: 45%;
 	min-height: 300px;
-	padding: 15px;
+	padding: var(--horizontalSpacing);
 }
 
 .info-graphic-banner .info a
@@ -327,7 +320,7 @@ footer a:hover
 
 .button-card
 {
-	margin: 15px;
+	margin: 0 var(--horizontalSpacing);
 	flex-basis: 100%;
 	height: 360px;
 	background: gray;
@@ -348,7 +341,7 @@ footer a:hover
 	align-self: flex-end;
 	text-shadow: var(--mcTextShadow);
 	display: block;
-	padding: 15px;
+	padding: var(--horizontalSpacing);
 	background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
 	width: 100%;
 }
@@ -380,12 +373,12 @@ footer a:hover
 {
 	display: inline-block;
 	color:black !important;
-	padding: 15px;
+	padding: var(--horizontalSpacing);
 	font-size: 1.2em;
 	background: white;
 	border: 2px solid black !important;
 	float: right;
-	margin: 15px 0 0 0;
+	margin: var(--horizontalSpacing) 0 0 0;
 }
 
 .more-info-button:hover
@@ -413,7 +406,7 @@ footer a:hover
 {
 	display: flex;
 	align-items: center;
-	padding: 15px;
+	padding: var(--horizontalSpacing);
 	border-bottom: 2px dashed white;
 }
 
@@ -431,7 +424,7 @@ footer a:hover
 {
 	width: 60px;
 	height: 60px;
-	margin-right: 15px;
+	margin-right: var(--horizontalSpacing);
 }
 
 #socials-grid .social .content
