@@ -83,7 +83,7 @@ nav .right
 	left: -15px;
 	width: 100vw;
 	margin: 0 0 calc(-120px + var(--verticalSpacing));
-	padding: 0 80px 0 0;
+	padding: 0 180px 0 0;
 }
 
 #showcase-features .card
