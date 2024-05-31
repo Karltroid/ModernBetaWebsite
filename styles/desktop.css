@@ -550,14 +550,12 @@ ul ul
 	width: 33.33%;
 	height: 50vh;
 	background-color: rgba(0, 0, 0, 0.1);
-	background-size: 80%;
-	background-repeat: no-repeat;
-	background-position: center;
 	display: table-cell;
 	vertical-align:middle;
 	padding: 15px;
 	font-size: 1.5em;
 	transition: transform .25s;
+	text-shadow: var(--mcTextShadow);
 }
 
 .answers div img 
@@ -566,6 +564,7 @@ ul ul
 	display: block;
 	margin: 0 auto;
 	padding: 20px;
+	image-rendering: pixelated;
 }
 
 .answers div:hover
@@ -583,20 +582,22 @@ ul ul
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 15px;
 	padding: 30px 0px;
-	
 	text-align: center;
 	pointer-events: initial;
+	text-shadow: var(--mcTextShadow) !important;
 }
 
 .tutorial h1
 {
 	font-size: 2em;
 	padding: 5px;
+	text-shadow: var(--mcTextShadow);
 }
 
 .tutorial p
 {
 	padding: 5px;
+	text-shadow: var(--mcTextShadow);
 }
 
 .tutorial img
