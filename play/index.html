@@ -47,9 +47,124 @@
 			</div>
 		</nav>
 
+		<script type="text/javascript">
+			function hideelement(id)
+			{
+				document.getElementById(id).classList.add("hide");
+			}
+
+			function showelement(id)
+			{
+				document.getElementById(id).classList.remove("hide");
+			}
+
+			function loadprompt(current_prompt_id, new_prompt_id)
+			{
+				document.getElementById(current_prompt_id).classList.add("hide");
+				document.getElementById(new_prompt_id).classList.remove("hide");
+			}
+		</script>
+
 		<div id="page-content" class="nav-bar-offset">
-			<p style="padding: 30px 0px; font-size: 1.6em;">Thank you for your interest in playing the Modern Beta SMP!<br /><br />
-			However, it is still in development with a plan to release in the next month or so. Follow our <a style="text-decoration: underline;" href="../socials">socials</a> and join our <a target="_blank" style="text-decoration: underline;" href="https://discord.gg/gXmjuejWtD">Discord</a> for updates!</p>
+			
+			<div style="padding: 30px; text-align: center;">
+				<h1>IP/Server Address:</h1>
+				<h1 style="font-family: minecraft; font-size: 1.5em;">play.modernbeta.org</h1>
+				<br />
+				<br />
+				Need help? Use our guide down below!
+			</div>
+
+			<div id="device" class="questionare">
+				<h1>What device are you playing on?</h1>
+				<div class="answers">
+					<div onclick="loadprompt('device','edition');" style="background-image: url('../images/icons/computer.png');">
+						Computer
+					</div>
+					<div onclick="loadprompt('device','bedrock-tutorial');" style="background-image: url('../images/icons/mobile.png');">
+						Mobile
+					</div>
+					<div onclick="loadprompt('device','console-tutorial');" style="background-image: url('../images/icons/console.png');">
+						Console
+					</div>
+				</div>
+			</div>
+			<div id="edition" class="questionare hide">
+				<h1>Which Minecraft Edition?</h1>
+				<div class="answers">
+					<div onclick="loadprompt('edition','java-tutorial');" style="background-image: url('../images/minecraft/javamenu.jpg');">
+						Java Edition
+					</div>
+					<div onclick="loadprompt('edition','bedrock-tutorial');" style="background-image: url('../images/minecraft/bedrockmenu.jpg');">
+						Bedrock Edition
+					</div>
+				</div>
+			</div>
+
+			<div id="java-tutorial" class="tutorial hide">
+				<h1>Step 1</h1>
+				<p>Press 'Multiplayer'</p>
+				<img src="../images/minecraft/javatutorial/1.jpg" />
+
+				<h1>Step 2</h1>
+				<p>Press 'Add Server'</p>
+				<img src="../images/minecraft/javatutorial/2.jpg" />
+
+				<h1>Step 3</h1>
+				<p>Enter the server name and address (play.modernbeta.org)</p>
+				<img src="../images/minecraft/javatutorial/3.jpg" />
+
+				<h1>Step 4</h1>
+				<p>Press 'Join Server' - you're done, have fun!</p>
+				<img src="../images/minecraft/javatutorial/4.jpg" />
+			</div>
+
+			<div id="bedrock-tutorial" class="tutorial hide">
+				<h1>Step 1</h1>
+				<p>Press 'Play'</p>
+				<img src="../images/minecraft/bedrocktutorial/1.jpg" />
+
+				<h1>Step 2</h1>
+				<p>Press 'Servers'</p>
+				<img src="../images/minecraft/bedrocktutorial/2.jpg" />
+
+				<h1>Step 3</h1>
+				<p>Scroll down and click 'Add Server'</p>
+				<img src="../images/minecraft/bedrocktutorial/3.jpg" />
+
+				<h1>Step 4</h1>
+				<p>Enter the server name, address (play.modernbeta.org), and port (19132)</p>
+				<img src="../images/minecraft/bedrocktutorial/4.jpg" />
+
+				<h1>Step 5</h1>
+				<p>Press on the server entry we just created</p>
+				<img src="../images/minecraft/bedrocktutorial/5.jpg" />
+
+				<h1>Step 6</h1>
+				<p>Press 'Join Server' - you're done, have fun!</p>
+				<img src="../images/minecraft/bedrocktutorial/6.jpg" />
+			</div>
+
+			<div id="console-tutorial" class="tutorial hide">
+				<h1>Step 1</h1>
+				<p>Make sure your console and phone are on the same internet/wifi connection</p>
+
+				<h1>Step 2</h1>
+				<p>Go to the app store and download 'BedrockTogether' - or download 'MC Server Connector' alternatively if BedrockTogether doesn't work for you, they work basically the same</p>
+				<img src="../images/minecraft/consoletutorial/2.jpg" />
+
+				<h1>Step 3</h1>
+				<p>Open the app and enter the server IP (play.modernbeta.org) and port (19132) - then click 'Watch Ad and Run' - Wait for the Ad to finish</p>
+				<img src="../images/minecraft/consoletutorial/3.jpg" />
+
+				<h1>Step 4</h1>
+				<p>On your console press 'Play'</p>
+				<img src="../images/minecraft/bedrocktutorial/1.jpg" />
+
+				<h1>Step 5</h1>
+				<p>In the 'Friends' tab you should see 'LAN Games' with the BedrockTogether server you started, join it and you're good to join!</p>
+				<img src="../images/minecraft/consoletutorial/5.jpg" />
+			</div>
 		</div>
 
 		<footer class="pixel-perfect">

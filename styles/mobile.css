@@ -238,3 +238,19 @@ footer
 	font-size: 2em;
 	font-family: minecraft-bold;
 }
+
+
+.tutorial img
+{
+	width: 95%;
+	margin-bottom: 30px;
+}
+
+.answers div
+{
+	height: 512px;
+	width: 100%;
+	display: table-row;
+	vertical-align:bottom;
+	line-height: 60px;
+}

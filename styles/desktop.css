@@ -41,6 +41,11 @@ body
 	background: linear-gradient(180deg, var(--waterBlue) 25%, var(--waterBlueDark) 100%)
 }
 
+s 
+{
+	text-decoration: line-through;
+}
+
 .pixel-perfect
 {
 	-ms-interpolation-mode: nearest-neighbor;
@@ -447,7 +452,7 @@ footer a:hover
 	font-size: 1.2em;
 }
 
-#rules
+.table-info
 {
 	width: 100%;
 	height: 100%;
@@ -455,7 +460,7 @@ footer a:hover
 	padding: 25px 0 0 0 ;
 }
 
-#rules ol
+.table-info ol
 {
 	list-style-type: upper-roman !important;
 	list-style: upper-roman inside;
@@ -464,13 +469,27 @@ footer a:hover
 	height: 100%;
 }
 
-#rules ol img
+.table-info ul
+{
+	list-style: square inside;
+	border: 2px solid black;
+	padding: 10px;
+	height: 100%;
+}
+
+ul ul
+{
+	border: none !important;
+	margin-left: 20px;
+}
+
+.table-info ol img, .table-info ul img
 {
 	width: 100%;
 	max-width: 300px;
 }
 
-#rules th
+.table-info th
 {
 	width: 50%;
 	padding: 20px;
@@ -478,17 +497,18 @@ footer a:hover
 	border: 2px solid black;
 }
 
-#rules td
+.table-info td
 {
 	height: 100%;
+	background-image: url('../images/backgrounds/mobile_nav_bg.png');
 }
 
-#rules li
+.table-info li
 {
 	margin-bottom: 20px;
 }
 
-#rules li h2
+.table-info li h2
 {
 	font-weight: normal;
 	font-family: minecraft-bold;
@@ -496,4 +516,89 @@ footer a:hover
 	margin: 0;
 	padding: 0;
 	display: inline;
+}
+
+
+/**play tutorial - taken from my old site, will refactor later **/
+.questionare
+{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 30px 0px;
+	
+	text-align: center;
+	pointer-events: initial;
+}
+
+.questionare h1
+{
+	font-size: 2em;
+	padding: 10px;
+}
+
+.answers
+{
+	display: table;
+	border-spacing: 5vw;
+	width: 100%;
+}
+
+.answers div
+{
+	height: 512px;
+	width: 33.33%;
+	height: 50vh;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table-cell;
+	vertical-align:bottom;
+	padding: 15px;
+	font-size: 1.5em;
+	transition: transform .25s;
+}
+
+.answers div:hover
+{
+	cursor: pointer;
+	transform: scale(1.05);
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid var(--beanaPurple);
+	transition: transform .5s, background-color .5s;
+}
+
+.tutorial
+{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 30px 0px;
+	
+	text-align: center;
+	pointer-events: initial;
+}
+
+.tutorial h1
+{
+	font-size: 2em;
+	padding: 5px;
+}
+
+.tutorial p
+{
+	padding: 5px;
+}
+
+.tutorial img
+{
+	width: 60%;
+	max-width: 1000px;
+	margin-bottom: 30px;
+}
+
+.hide
+{
+	display: none;
 }
