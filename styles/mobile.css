@@ -248,9 +248,9 @@ footer
 
 .answers div
 {
-	height: 512px;
+	height: auto;
 	width: 100%;
 	display: table-row;
-	vertical-align:bottom;
+	vertical-align:middle;
 	line-height: 60px;
 }

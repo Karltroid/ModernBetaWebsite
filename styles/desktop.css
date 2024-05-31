@@ -554,10 +554,18 @@ ul ul
 	background-repeat: no-repeat;
 	background-position: center;
 	display: table-cell;
-	vertical-align:bottom;
+	vertical-align:middle;
 	padding: 15px;
 	font-size: 1.5em;
 	transition: transform .25s;
+}
+
+.answers div img 
+{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 .answers div:hover
