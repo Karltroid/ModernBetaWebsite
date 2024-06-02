@@ -114,7 +114,7 @@ nav .right
 {
 	display: inline-table;
 	height: 100%;
-	position: absolute;
+	position: relative;
 	top: 0;
 }
 
