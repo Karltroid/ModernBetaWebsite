@@ -3,6 +3,7 @@ Disallow: /fonts/
 Disallow: /scripts/
 Disallow: /styles/
 Disallow: /images/icons/
+Allow: /images/favicon.ico
 Disallow: /images/socials/
 Disallow: /images/backgrounds/
 
