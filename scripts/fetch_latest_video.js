@@ -6,9 +6,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch(rssToJsonUrl);
     const data = await response.json();
 
-    console.log(data);
-    
-
     const latestVideo = data.items.find((item) => !item.title.includes("#"));
 
     if (latestVideo) {
