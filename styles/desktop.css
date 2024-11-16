@@ -542,7 +542,7 @@ ul ul
 .answers
 {
 	display: table;
-	border-spacing: 5vw;
+	border-spacing: 2.5vw;
 	width: 100%;
 }
 
@@ -562,10 +562,10 @@ ul ul
 
 .answers div img 
 {
-	width: 80%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px 0;
 	image-rendering: pixelated;
 }
 
